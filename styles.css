@@ -80,6 +80,11 @@ body{
   /* border: 5px solid black; */
 }
 
+.musiciconimg{
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
 .btnanimation {
   transition: transform 1s; /
 }
@@ -423,6 +428,6 @@ a:hover{
 
   font-size: 20px;
   padding: 1rem;
+  
 }
-
 
