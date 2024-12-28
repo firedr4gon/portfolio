@@ -14,6 +14,7 @@ song.src =
   "./music/S1MBA - ROVER (DUCKHEAD EDIT) (Slowed) [fTjZA9e-PFI_00_00_19_00_02_40_part].mp3";
 
 song.volume = 0.2;
+song.loop = true;
 song.play();
 
 let music = false;
