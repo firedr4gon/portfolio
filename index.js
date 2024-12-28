@@ -4,7 +4,19 @@ moonImage.src = "./icons/moon.png";
 const dayModeImage = new Image();
 dayModeImage.src = "./icons/day-mode.png";
 
+const musicon = new Image();
+const musicoff = new Image();
+musicon.src = "./icons/musicon.svg";
+musicoff.src = "./icons/musicoff.svg";
 
+const song = new Audio();
+song.src =
+  "./music/S1MBA - ROVER (DUCKHEAD EDIT) (Slowed) [fTjZA9e-PFI_00_00_19_00_02_40_part].mp3";
+
+song.volume = 0.2;
+song.play();
+
+let music = false;
 
 let toggleTheme = "dark";
 
@@ -158,18 +170,17 @@ window.addEventListener("load", function () {
     init();
   });
 
-  const darkmodeButtonn = document.querySelector(".darkmode");
+  const darkmodeButtonn = document.querySelector(".darkmodebtn");
   const themeimg = document.querySelector(".darkmodeButton");
   darkmodeButtonn.addEventListener("click", () => {
     console.log("theme changed from here");
 
     if (toggleTheme == "dark") {
-
       themeimg.src = moonImage.src;
       ballsColor = "black";
       threadColor = "rgba(0, 0, 0,";
       toggleTheme = "light";
-      
+
       body.classList.add("lightbody");
       body.classList.remove("darkbody");
 
@@ -190,4 +201,17 @@ window.addEventListener("load", function () {
 
     ctx1.fillStyle = ballsColor;
   });
+});
+
+const musicbtn = document.querySelector(".musicbtn");
+musicbtn.addEventListener("click", () => {
+  if (music) {
+    musicbtn.src = musicoff.src;
+    song.pause();
+  } else {
+    musicbtn.src = musicon.src;
+    song.play();
+  }
+
+  music = !music;
 });
