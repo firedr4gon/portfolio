@@ -173,6 +173,8 @@ window.addEventListener("load", function () {
 
   const darkmodeButtonn = document.querySelector(".darkmodebtn");
   const themeimg = document.querySelector(".darkmodeButton");
+  const projectKiDandi = document.querySelectorAll('.dandi');
+
   darkmodeButtonn.addEventListener("click", () => {
     console.log("theme changed from here");
 
@@ -184,6 +186,12 @@ window.addEventListener("load", function () {
 
       body.classList.add("lightbody");
       body.classList.remove("darkbody");
+      console.log(projectKiDandi);
+      
+      projectKiDandi.forEach((e) => {
+        e.classList.add("projectKiDandiLight");
+        e.classList.remove("projectKiDandiDark");
+      });
 
       navimg.forEach((e) => {
         e.classList.remove("navimg");
@@ -195,6 +203,12 @@ window.addEventListener("load", function () {
       toggleTheme = "dark";
       body.classList.add("darkbody");
       body.classList.remove("lightbody");
+
+      projectKiDandi.forEach((e) => {
+        e.classList.add("projectKiDandiDark");
+        e.classList.remove("projectKiDandiLight");
+      });
+
       navimg.forEach((e) => {
         e.classList.add("navimg");
       });

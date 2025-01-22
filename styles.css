@@ -35,7 +35,7 @@ body{
 }
 
 .lightbody {
-  background-color: white;
+  background-color: #D8D9DA;
   color: black;
 }
 #canvas1 {
@@ -450,7 +450,12 @@ a:hover{
   border-radius: 100%;
 }
 
-.underline{
+.projectKiDandiLight{
+  width: 20vw;
+  border: 1px solid black;
+}
+
+.projectKiDandiDark{
   width: 20vw;
   border: 1px solid white;
 }
