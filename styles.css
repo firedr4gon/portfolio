@@ -20,7 +20,10 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Gotham", "New Rocker", system-ui;
+  /* font-family:"Acme","Gotham", system-ui; */
+  font-family: "Chakra Petch", serif;
+  /* font-weight: 300; */
+  font-style: normal;
 }
 
 body{
@@ -179,9 +182,9 @@ a:hover{
 }
 .heading2 {
   width: 100%;
-  font-size: 30px;
   margin-left: 5px;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
+  font-size: 30px;
 }
 
 
@@ -198,7 +201,7 @@ a:hover{
   /* height: 80vh; */
   width: 103vw;
   padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   /* margin-left: 3vw; */
   /* border: 2px solid red; */
@@ -219,7 +222,14 @@ a:hover{
   justify-content: end;
   margin: 1rem;
   font-size: 20px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+}
+
+.sectionHeading{
+
+  font-size: 30px;
+  margin-bottom: 3rem;
+
 }
 .aboutContentContainer{
 
@@ -314,15 +324,15 @@ a:hover{
 
 .footer{
   width: 100vw;
-  height: 2vh;
+  height: 1.7vh;
   background-color: #F96E2A;
   color: black;
   display: flex;
   padding-left: 0.3rem;
   padding-right: 0.6rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
   font-weight:bolder;
 }
 
@@ -338,7 +348,7 @@ a:hover{
   /* height: 150vh; */
   width: 100vw;
 
-  margin-top: 3rem;
+  /* margin-top: 10rem; */
   margin-bottom: 2rem;
   padding-top: 3rem;
   /* margin-left: 3vw; */
@@ -365,8 +375,8 @@ a:hover{
 }
 
 .projectHeading{
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .projectImageContainer{
@@ -405,8 +415,9 @@ a:hover{
 
 .project2{
   display: flex;
-  justify-content: end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
 
 
@@ -417,6 +428,7 @@ a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .techImageContainer{
@@ -431,3 +443,14 @@ a:hover{
   
 }
 
+.sectionBreak{
+  border: 1px solid #F96E2A;
+  width: 60vw;
+  margin: 5rem auto;
+  border-radius: 100%;
+}
+
+.underline{
+  width: 20vw;
+  border: 1px solid white;
+}
